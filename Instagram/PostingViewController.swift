@@ -42,7 +42,7 @@ class PostingViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func postPressed(_ sender: UIButton) {
         guard postImageView.image != nil && postCaptionTextField.text != "" else { return }
         
-        let post = PFObject(className: "Post")
+        let post = PFObject(className: "Posts")
         
         post["caption"] = postCaptionTextField.text!
         post["author"] = PFUser.current()!

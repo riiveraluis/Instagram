@@ -9,6 +9,7 @@ import UIKit
 
 class PostCell: UITableViewCell {
 
+    @IBOutlet weak var authorProfilePhoto: UIImageView!
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var photoCaption: UILabel!
